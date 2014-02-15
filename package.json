@@ -1,0 +1,35 @@
+{
+  "name": "Ember-app-boilerplate",
+  "allUrl": "public/",
+  "folderConfig": {
+    "user_css_folder": "css",
+    "user_fonts_folder": "fonts",
+    "user_sass_folder": "sass",
+    "user_sasscache_folder": ".sass-cache",
+    "user_image_folder": "img",
+    "user_javascript_folder": "scripts",
+    "user_sourcemaps": true
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-rsync": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-connect": "~0.2.0",
+    "connect-livereload": "~0.2.0",
+    "grunt-open": "~0.2.0",
+    "bower": "~1.2.6",
+    "handlebars": "~1.1.2",
+    "ember-template-compiler": "~1.3.0-beta.2",
+    "grunt-ember-templates": "~0.4.18",
+    "express": "~3.4.8",
+    "express-namespace": "~0.1.1",
+    "grunt-express": "~1.2.1",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

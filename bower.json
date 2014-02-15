@@ -1,0 +1,6 @@
+{
+  "name": "Ember App boilerplate",
+  "dependencies": {
+    "ember": "latest"
+  }
+}
