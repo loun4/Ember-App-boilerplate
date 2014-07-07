@@ -1,4 +1,4 @@
 Ember-app-boilerplate
 =====================
 
- A boilerplate for your Ember App
+Web application starter kit using Node.js and Ember.js
