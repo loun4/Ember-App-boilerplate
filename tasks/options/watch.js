@@ -6,13 +6,13 @@ module.exports = {
         files:['public/index.html']
     },
     emberTemplates: {
-        files:['public/scripts/templates/**/*.hbs'],
+        files: ['public/scripts/templates/**/*.hbs'],
         tasks: ['emberTemplates']
     },
     sourcejs: {
-        files: '<%= jshint.ignore_warning.src %>',
+        files: ['assets/js/**/*.js'],
         spawn: true,
-        tasks: ['jshint', 'concat:app']
+        tasks: ['jshint']
     },
     compass: {
         files: 'public/sass/**/*',
@@ -24,6 +24,6 @@ module.exports = {
     },
     server: {
         files:  [ './server/**/*', 'server.js' ],
-        tasks:  [ 'reloadserver', 'connect:livereload']
+        tasks:  [ 'connect:livereload']
     }
 }

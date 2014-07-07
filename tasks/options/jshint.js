@@ -1,5 +1,6 @@
 module.exports = {
-    ignore_warning: {
-      src: ['/public/scripts/**/*.js']
+    src :['public/scripts/**/*.js'],
+    ignores: {
+      src: ['public/scripts/banners/**/*.js', 'public/scripts/templates.js']
     }
 };

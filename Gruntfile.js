@@ -11,7 +11,10 @@ var configs = {
     emberTemplates: config('emberTemplates'),      
     connect: config('connect'),
     open: config('open'),
-    concat: config('concat')
+    shell: config('shell'),
+    uglify: config('uglify'),
+    processhtml: config('processhtml'),
+    includeSource: config('includeSource')
 }
 
 function exports(grunt) {  
@@ -20,7 +23,8 @@ function exports(grunt) {
     configs.pkg = grunt.file.readJSON('package.json');
     grunt.initConfig(configs);
 
-    grunt.task.loadTasks('./tasks');  
+    grunt.task.loadTasks('./tasks');
+    grunt.registerTask('build', ['compass:dist', 'uglify:dist', 'processhtml:dist']);
 }
 
 module.exports = exports;

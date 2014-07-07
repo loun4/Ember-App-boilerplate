@@ -6,7 +6,7 @@ var mountFolder = function (connect, dir) {
 };
 
 var config = {
-    app: './public',
+    app: './',
     dist: 'dist'
 }; 
 
@@ -22,7 +22,7 @@ module.exports = {
 					lrSnippet,
 					mountFolder(connect, '.tmp'),
 					mountFolder(connect, config.app),
-					require('../../server/server.js')
+					require('../../app/server.js')
 				];
 			}
 		}

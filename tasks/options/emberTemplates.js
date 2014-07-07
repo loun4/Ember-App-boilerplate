@@ -4,7 +4,7 @@ module.exports = {
 			templateBasePath: /public\/scripts\/templates\//
 		},
 		files: {
-			'public/dist/scripts/templates.js': 'public/scripts/templates/**/*.hbs'
+			'public/scripts/templates.js': 'public/scripts/templates/**/*.hbs'
 		}
 	}
 }
