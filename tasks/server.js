@@ -5,7 +5,6 @@ module.exports = function(grunt) {
         }
 
         grunt.log.writeln('Started web server on port 3000');
-        require('../app/server').listen(3000);
 
         grunt.task.run([
             'connect:livereload',
