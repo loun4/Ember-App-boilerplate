@@ -1,10 +1,10 @@
 module.exports = {
 	compile: {
 		options: {
-			templateBasePath: /public\/scripts\/templates\//
+			templateBasePath: /app\/assets\/js\/templates\//
 		},
 		files: {
-			'public/scripts/templates.js': 'public/scripts/templates/**/*.hbs'
+			'app/assets/js/templates.js': 'app/assets/js/templates/**/*.hbs'
 		}
 	}
 }

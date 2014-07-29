@@ -1,29 +1,30 @@
 module.exports = {
     options: {
-        livereload:true
+        livereload: true
     }, 
+
     sourcehtml: {
-        files:['public/index.html']
+        files:['views/index.jade']
     },
+
     emberTemplates: {
-        files: ['public/scripts/templates/**/*.hbs'],
+        files: ['app/assets/js/templates/**/*.hbs'],
         tasks: ['emberTemplates']
     },
+
     sourcejs: {
-        files: ['assets/js/**/*.js'],
+        files: ['app/assets/js/**/*.js'],
         spawn: true,
         tasks: ['jshint']
     },
+
     compass: {
-        files: 'public/sass/**/*',
+        files: 'app/assets/sass/**/*',
         spawn: true,
         tasks: ['compass']
     }, 
+
     sourcecss: {
         files: ['public/styles/*.css']
-    },
-    server: {
-        files:  [ './server/**/*', 'server.js' ],
-        tasks:  [ 'connect:livereload']
     }
 }

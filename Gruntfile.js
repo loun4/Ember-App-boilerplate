@@ -10,11 +10,7 @@ var configs = {
     watch: config('watch'),
     emberTemplates: config('emberTemplates'),      
     connect: config('connect'),
-    open: config('open'),
-    shell: config('shell'),
-    uglify: config('uglify'),
-    processhtml: config('processhtml'),
-    includeSource: config('includeSource')
+    open: config('open')
 }
 
 function exports(grunt) {  
@@ -24,7 +20,7 @@ function exports(grunt) {
     grunt.initConfig(configs);
 
     grunt.task.loadTasks('./tasks');
-    grunt.registerTask('build', ['compass:dist', 'uglify:dist', 'processhtml:dist']);
+    grunt.registerTask('build', ['compass:dist']);
 }
 
 module.exports = exports;

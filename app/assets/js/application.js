@@ -1,4 +1,9 @@
+//= require ./bower_components/jquery/dist/jquery.js
+//= require ./bower_components/handlebars/handlebars.js
+//= require ./bower_components/ember/ember.js
+//= require ./webapp
 //= require ./router
+//= require ./templates
 //= require_tree ./models
 //= require_tree ./mixins
 //= require_tree ./controllers
